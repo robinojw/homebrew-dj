@@ -5,23 +5,23 @@
 class Dj < Formula
   desc "DJ — an AI coding harness TUI for OpenAI Codex"
   homepage "https://github.com/robinojw/dj"
-  version "0.1.6"
+  version "0.1.7"
   license "MIT"
 
   depends_on "git"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/robinojw/dj/releases/download/v0.1.6/dj_0.1.6_darwin_amd64.tar.gz"
-      sha256 "60a7fe6f86c6639996a85b1ab66de1a63c74dd4326795aeecfd810360717f5cd"
+      url "https://github.com/robinojw/dj/releases/download/v0.1.7/dj_0.1.7_darwin_amd64.tar.gz"
+      sha256 "8687f72484b9d5e07b85268364a42b49600180e335471d7fbbf44fe353bea90c"
 
       define_method(:install) do
         bin.install "dj"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/robinojw/dj/releases/download/v0.1.6/dj_0.1.6_darwin_arm64.tar.gz"
-      sha256 "4033a5be6c6868d32c3a0a76621c8dec77f5648d00a2e0f99874c7dd15d79904"
+      url "https://github.com/robinojw/dj/releases/download/v0.1.7/dj_0.1.7_darwin_arm64.tar.gz"
+      sha256 "e9ff6aea795a7c287aa53e4d7af29a1cbf90157d3c976bbf37cd4cb01e7c3035"
 
       define_method(:install) do
         bin.install "dj"
@@ -31,15 +31,15 @@ class Dj < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/robinojw/dj/releases/download/v0.1.6/dj_0.1.6_linux_amd64.tar.gz"
-      sha256 "9a07f80089f02bb769b48d3df3b060881104475b25c75804e84d3414646e043c"
+      url "https://github.com/robinojw/dj/releases/download/v0.1.7/dj_0.1.7_linux_amd64.tar.gz"
+      sha256 "eff7a8b8c93b7545fa8a640b749a4b28b30288b763aab2d8836d90e7f54f8d0b"
       define_method(:install) do
         bin.install "dj"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/robinojw/dj/releases/download/v0.1.6/dj_0.1.6_linux_arm64.tar.gz"
-      sha256 "aa518b5f234b544d186e25e0175b525c073407d34294974e1dbb70e90f226efc"
+      url "https://github.com/robinojw/dj/releases/download/v0.1.7/dj_0.1.7_linux_arm64.tar.gz"
+      sha256 "e31c93160c1da88a4ff8f941b143052dfa93bcc820ea1ae4bc66aec52ebef7cd"
       define_method(:install) do
         bin.install "dj"
       end
